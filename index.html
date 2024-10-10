@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AX Sistemas Elétricos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./images/logoaxpqnotransp.png">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            function myNavBar() {
+                var x = document.getElementById("demo");
+            
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+
+            function myAccordion(id1,id2) {
+                var x = document.getElementById(id1);
+                var y = document.getElementById(id2);
+                
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                    y.className = "fa fa-angle-up w3-xxlarge";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                    y.className = "fa fa-angle-down w3-xxlarge";
+                }
+            }
+        </script>
+    </head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <a href="#home" class="w3-bar-item w3-button">
+                <span><img class="w3-image" src="./images/logoaxpqnotransp.png" alt="Logo" width="25" height="25"></span>
+                 <b><font color="#004a85">Sistemas Elétricos</font></b>
+            </a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right">
+                <a href="#services" class="w3-bar-item w3-button w3-hide-small">Serviços</a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small">Sobre Nós</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contato</a>
+                <a href="#faq" class="w3-bar-item w3-button w3-hide-small">FAQ</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myNavBar()">&#9776;</a>
+            </div>
+
+            <div id="demo" class="w3-right w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+                <a href="#services" class="w3-bar-item w3-button" onclick="myNavBar()">Serviços</a>
+                <a href="#about" class="w3-bar-item w3-button" onclick="myNavBar()">Sobre Nós</a>
+                <a href="#contact" class="w3-bar-item w3-button" onclick="myNavBar()">Contato</a>
+                <a href="#faq" class="w3-bar-item w3-button" onclick="myNavBar()">FAQ</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <img class="w3-image" src="./images/moduloscapa.png" alt="Módulos" width="1500" height="983" style="opacity: 0.75;">
+        <div class="w3-display-middle w3-margin-top w3-center">
+            <h1 class="w3-xxlarge w3-text-white">
+                <span class="w3-padding">
+                    <img class="w3-image" src="./images/logoaxpqno.png" alt="Logo" width="102" height="102" style="border-radius: 51px;">
+                </span><br><span class="w3-hide-small w3-text-light-grey"><b>Sistemas Elétricos</b></span>
+            </h1>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content w3-padding" style="max-width:1564px">
+
+        <!-- Services Section -->
+        <div class="w3-container w3-padding-32" id="services">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Serviços</h3>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Instalações Elétricas</div>
+                    <img src="./images/current-electricity.jpg" alt="current-electricity" style="width:100%">
+                    <h4 class="w3-padding w3-black w3-opacity-min">Instalação e Manutenção de Instalações Elétricas</h4>
+                    <p>Garantimos que sua infraestrutura elétrica seja instalada com precisão e cuidado, 
+                        seguindo todas as normas e regulamentações vigentes. Desde residências até espaços comerciais, 
+                        assegurando que sua instalação elétrica seja confiável e eficiente.</p>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">SPDA</div>
+                    <img src="./images/weather-storm.jpg" alt="weather-storm" style="width:100%">
+                    <h4  class="w3-padding w3-black w3-opacity-min">Instalação e Manutenção de Sistema de Proteção 
+                        contra Descargas Atmosféricas</h4>
+                    <p>Proteja seu patrimônio contra os perigos das descargas atmosféricas com nossos serviços de 
+                        instalação e manutenção de SPDA. Garantimos que seu sistema esteja em conformidade com as 
+                        normas técnicas, proporcionando tranquilidade em todas as condições climáticas.</p>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Energia Solar</div>
+                    <img src="./images/sunlight-electricity-energy.jpg" alt="sunlight-electricity-energy" style="width:100%">
+                    <h4  class="w3-padding w3-black w3-opacity-min">Projeto, Instalação e Manutenção de Geradores Solares Fotovoltaicos</h4>
+                    <p>Com nossas soluções de energia solar fotovoltaica, desde a concepção do projeto até a instalação 
+                        e manutenção contínua, ajudamos nossos clientes a reduzir seus custos de energia, desfrutado de 
+                        uma fonte de energia limpa e renovável.</p>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">EV Charge</div>
+                    <img src="./images/mobilidade-eletrica.jpg" alt="mobilidade-eletrica" style="width:100%">
+                    <h4  class="w3-padding w3-black w3-opacity-min">Instalação de carregadores de veículos elétricos</h4>
+                    <p>Reforçando nosso compromisso com a inovação e a sustentabilidade, esse serviço permite a 
+                        integração com sistemas de painéis solares, proporcionando uma solução ainda mais econômica e ecológica, ou pode ser ligado 
+                        diretamente à instalação elétrica do local, garantindo flexibilidade para diferentes tipos de projetos. Estamos prontos para atender 
+                        às demandas do futuro da mobilidade elétrica.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="w3-container w3-padding-32" id="about">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Sobre Nós</h3>
+            <h4>Energia confiável para seu espaço.</h4>
+            <p>A AX Sistemas Elétricos é uma empresa especializada em serviços elétricos de alta qualidade. Estabelecida na cidade do Rio de Janeiro, 
+                nossa empresa é conduzida com um compromisso inabalável com a segurança, a excelência técnica e a satisfação do cliente.
+            </p>
+            <p>Todos os nossos serviços são executados sob a supervisão direta de um engenheiro eletricista devidamente registrado no 
+                Conselho Regional de Engenharia e Agronomia do Rio de Janeiro (CREA-RJ), garantindo padrões elevados de qualidade e segurança. 
+                Além disso, todas as atividades realizadas possuem suas devidas Anotações de Responsabilidade Técnica (ART), demonstrando nosso 
+                compromisso com a transparência e a conformidade regulatória.
+            </p>
+            <p>Estamos empenhados em fornecer soluções elétricas confiáveis e sustentáveis para atender às necessidades de nossos clientes, 
+                contribuindo para um ambiente mais seguro, eficiente e ecologicamente consciente. Entre em contato conosco hoje mesmo e descubra 
+                como podemos ajudá-lo a energizar seu espaço com confiança.
+            </p>
+        </div>
+
+        <div class="w3-row-padding w3-grayscale">
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <h3><span class="w3-padding w3-black w3-opacity-min">Missão</span></h3>
+                <p>Fornecer soluções elétricas seguras, eficientes e sustentáveis, com excelência técnica e conformidade às 
+                    normas, garantindo a satisfação e a proteção de nossos clientes.</p>
+            </div>
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <h3><span class="w3-padding w3-black w3-opacity-min">Visão</span></h3>
+                <p>Ser referência em soluções elétricas no Rio de Janeiro, reconhecida pela qualidade, inovação e compromisso 
+                    com a sustentabilidade e a segurança em todos os projetos.</p>
+            </div>
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <h3><span class="w3-padding w3-black w3-opacity-min">Valores</span></h3>
+                <p>Comprometimento com a segurança, excelência técnica, ética profissional, respeito às normas, 
+                    sustentabilidade e foco na satisfação do cliente.</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-grayscale">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="./images/leonardo-machado.png" alt="Leonardo Machado" style="width:100%">
+                <h3>Leonardo Afonso Machado</h3>
+                <p class="w3-opacity">Fundador</p>
+                <p>Graduado em Engenharia Elétrica e em Processos Gerenciais, MBA em Governança de Tecnologia da Informação.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-32" id="contact">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contato</h3>
+            <p>Entre em contato conosco hoje mesmo e descubra como podemos ajudá-lo a energizar seu espaço com confiança.</p>
+            <p>&nbsp;</p>
+
+            <div class="w3-col l6 m6 w3-margin-bottom">
+                <form name="contato" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSep3OTR44Lpyr8048OCPchh2Hz2s-hH2bELsejFYdRJagv_Tg/formResponse" target="_blank">
+                    <input class="w3-input w3-border" type="text" placeholder="Nome" required name="entry.1194060328">
+                    <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="entry.1877011538">
+                    <input class="w3-input w3-section w3-border" type="text" placeholder="Assunto" required name="entry.1647379281">
+                    <input class="w3-input w3-section w3-border" type="text" placeholder="Mensagem" required name="entry.1806731026">
+                    <button class="w3-button w3-black w3-section" type="submit"> ENVIAR MENSAGEM </button>
+                </form>
+            </div>
+
+            <div class="w3-col l1 m6 w3-margin-bottom">
+                <p>&nbsp;</p>
+            </div>
+
+            <div class="w3-col l5 m6 w3-margin-bottom w3-display-top">
+                <p><i class="fa fa-location-arrow"></i> Rua Oliveira Melo, 123 - Cordovil - Rio de Janeiro - RJ</p>
+                <p><i class="fa fa-phone-square"></i> +55 21 4042-5516</p>
+                <p><a href="https://api.whatsapp.com/send?phone=5521999932457&text=Ol%C3%A1%21+Gostaria+de+receber+mais+informações+sobre+os+serviços+da+AX+Sistemas+Elétricos.&type=phone_number&app_absent=0" style="text-decoration: none;"><i class="fa fa-whatsapp"></i> +55 21 99993-2457</a></p>
+                <p><a href="mailto:axsistemaseletricos@protonmail.com" style="text-decoration: none;"><i class="fa fa-envelope"></i> axsistemaseletricos@protonmail.com</a></p>
+                <p>
+                    <a href="https://www.facebook.com/axsistemaseletricos" target="_blank"><i class="fa fa-facebook-square w3-xxlarge"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.instagram.com/axsistemaseletricos/" target="_blank"><i class="fa fa-instagram w3-xxlarge"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/company/axsistemaseletricos/" target="_blank"><i class="fa fa-linkedin-square w3-xxlarge"></i></a>
+                </p>
+                
+                <form name="cotacao" action="https://docs.google.com/forms/d/e/1FAIpQLSdBj1xx63x4XXSA8n_Yv63s1OAmpfyyaPDA4u6BOc9zPrijRQ/viewform" method="get" target="_blank">
+                    <button class="w3-button w3-black w3-section"> PEÇA UM ORÇAMENTO </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="w3-container w3-padding-32" id="faq">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">FAQ (Perguntas Frequentes)</h3>
+            
+            <button onclick="myAccordion('Demo1','btn1')" class="w3-button w3-block w3-black w3-opacity-min w3-left-align">
+                <span style="white-space: normal;">Quais são os principais benefícios de contratar serviços profissionais 
+                de instalação elétrica?</span> <span class="w3-right"><i id="btn1" class="fa fa-angle-down w3-xxlarge"></i></span></button>
+            <div id="Demo1" class="w3-container w3-hide">
+                <p>Contratar serviços profissionais de instalação elétrica garante segurança, eficiência e conformidade 
+                    com as normas técnicas. Profissionais qualificados minimizam riscos de curto-circuitos, 
+                    sobrecargas e incêndios, proporcionando uma instalação duradoura e confiável.</p>
+            </div>
+            <p></p>
+            <button onclick="myAccordion('Demo2','btn2')" class="w3-button w3-block w3-black w3-opacity-min w3-left-align">
+                <span style="white-space: normal;">Como a AX Sistemas Elétricos assegura a qualidade dos seus serviços 
+                de instalação elétrica?</span> <span class="w3-right"><i id="btn2" class="fa fa-angle-down w3-xxlarge"></i></span></button>
+            <div id="Demo2" class="w3-container w3-hide">
+                <p>A AX Sistemas Elétricos assegura a qualidade dos seus serviços por meio da supervisão de 
+                    um engenheiro eletricista registrado no CREA-RJ e pela emissão das devidas Anotações de 
+                    Responsabilidade Técnica (ART), garantindo que todas as instalações atendam aos padrões 
+                    regulamentares e de segurança.</p>
+            </div>
+            <p></p>
+            <button onclick="myAccordion('Demo3','btn3')" class="w3-button w3-block w3-black w3-opacity-min w3-left-align">
+                <span style="white-space: normal;">Por que é importante instalar um Sistema de Proteção contra Descargas 
+                Atmosféricas (SPDA)?</span> <span class="w3-right"><i id="btn3" class="fa fa-angle-down w3-xxlarge"></i></span></button>
+            <div id="Demo3" class="w3-container w3-hide">
+                <p>Instalar um SPDA é crucial para proteger edificações e pessoas contra os danos causados por 
+                    raios, evitando incêndios, danos estruturais e problemas elétricos. Ele garante segurança e 
+                    conformidade com as normas de segurança vigentes.</p>
+            </div>
+            <p></p>
+            <button onclick="myAccordion('Demo4','btn4')" class="w3-button w3-block w3-black w3-opacity-min w3-left-align">
+                <span style="white-space: normal;">Como a AX Sistemas Elétricos realiza a instalação e manutenção dos sistemas 
+                SPDA?</span> <span class="w3-right"><i id="btn4" class="fa fa-angle-down w3-xxlarge"></i></span></button>
+            <div id="Demo4" class="w3-container w3-hide">
+                <p>A AX Sistemas Elétricos realiza a instalação e manutenção dos sistemas SPDA seguindo rigorosamente 
+                    as normas técnicas e de segurança. O processo é supervisionado por um engenheiro eletricista 
+                    registrado no CREA-RJ, assegurando que o sistema seja eficaz e confiável em proteger contra 
+                    descargas atmosféricas.</p>
+            </div>
+            <p></p>
+            <button onclick="myAccordion('Demo5','btn5')" class="w3-button w3-block w3-black w3-opacity-min w3-left-align">
+                <span style="white-space: normal;">Quais são as vantagens de instalar um sistema de geração solar fotovoltaica?</span>
+                 <span class="w3-right"><i id="btn5" class="fa fa-angle-down w3-xxlarge"></i></span></button>
+            <div id="Demo5" class="w3-container w3-hide">
+                <p>As principais vantagens incluem redução significativa na conta de energia elétrica, menor impacto 
+                    ambiental por ser uma fonte de energia renovável e sustentável, e aumento da valorização do imóvel.</p>
+            </div>
+            <p></p>
+            <button onclick="myAccordion('Demo6','btn6')" class="w3-button w3-block w3-black w3-opacity-min w3-left-align">
+                <span style="white-space: normal;">Como a AX Sistemas Elétricos garante a eficiência e a durabilidade dos sistemas 
+                solares fotovoltaicos instalados?</span> <span class="w3-right"><i id="btn6" class="fa fa-angle-down w3-xxlarge"></i></span></button>
+            <div id="Demo6" class="w3-container w3-hide">
+                <p>A AX Sistemas Elétricos garante a eficiência e durabilidade dos sistemas solares fotovoltaicos 
+                    através de um planejamento detalhado, uso de materiais de alta qualidade e manutenção periódica. 
+                    Todos os projetos são supervisionados por um engenheiro eletricista registrado no CREA-RJ, 
+                    assegurando conformidade com as normas técnicas e regulatórias.</p>
+            </div>
+            <p></p>
+            <button onclick="myAccordion('Demo7','btn7')" class="w3-button w3-block w3-black w3-opacity-min w3-left-align">
+                <span style="white-space: normal;">A instalação de carregadores de veículos elétricos pode ser integrada com sistemas de 
+                energia solar?</span> <span class="w3-right"><i id="btn7" class="fa fa-angle-down w3-xxlarge"></i></span></button>
+            <div id="Demo7" class="w3-container w3-hide">
+                <p>Sim, a AX Sistemas Elétricos oferece a opção de integrar a instalação de carregadores de veículos elétricos com 
+                    painéis solares, permitindo maior economia e uso de energia limpa e renovável.</p>
+            </div>
+            <p></p>
+            <button onclick="myAccordion('Demo8','btn8')" class="w3-button w3-block w3-black w3-opacity-min w3-left-align">
+                <span style="white-space: normal;">É necessário realizar adaptações na instalação elétrica para instalar um carregador 
+                de veículo elétrico?</span> <span class="w3-right"><i id="btn8" class="fa fa-angle-down w3-xxlarge"></i></span></button>
+            <div id="Demo8" class="w3-container w3-hide">
+                <p>Em alguns casos, sim. A AX Sistemas Elétricos avalia a infraestrutura existente e, se necessário, realiza as 
+                    adaptações para garantir que o carregador funcione com segurança e eficiência.</p>
+            </div>
+        </div>
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer class="w3-center w3-black w3-padding-16">
+        <p class="w3-small">This website was made with W3schools Spaces.</p>
+        <p class="w3-small">Developed by AX Sistemas Elétricos. <i class="fa fa-copyright"></i> 2024.</p>
+    <!-- Footer end. -->
+    </footer>
+
+</body>
+
+</html>
